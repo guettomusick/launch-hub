@@ -4,8 +4,8 @@ import { LaunchSiteComponent } from './launch-site/launch-site.component';
 import { LaunchListComponent } from './launch-list/launch-list.component';
 
 const routes: Routes = [
-  {path: 'launch', component: LaunchListComponent},
-  {path: 'launch/:flightNumber', component: LaunchSiteComponent},
+  {path: 'launch', component: LaunchListComponent, data: { title: 'Upcoming Rocket Launches' }  },
+  {path: 'launch/:flightNumber', component: LaunchSiteComponent, data: { title: 'Launch Site' }  },
   {path: '', redirectTo: 'launch', pathMatch: 'full'}
 ];
 

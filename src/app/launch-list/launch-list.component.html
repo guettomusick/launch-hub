@@ -1,5 +1,5 @@
 <div class="ui text segment container">
-  <div class="ui unstackable divided link items" *ngIf="launches$ | async as launches; else loading">
+  <div class="ui  divided link items" *ngIf="launches$ | async as launches; else loading">
     <div class="item" *ngFor="let launch of launches"  [routerLink]="[launch.flight_number]">
       <div class="ui tiny image">
         <img [src]="launch.links.mission_patch">
