@@ -1,0 +1,19 @@
+<div class="ui unstackable divided link items">
+  <div class="item" *ngFor="let launch of launches | async">
+    <div class="ui tiny image">
+      <img [src]="launch.links.mission_patch">
+    </div>
+    <div class="content">
+      <div class="header">{{ launch.mission_name }}</div>
+      <div class="meta">
+        <span class="bold">Fligh Number:</span> {{ launch.flight_number }}
+      </div>
+      <div class="description">
+        <p>Launching <span class="italic">{{ launch.rocket.rocket_name }}</span>; a <span class="italic">{{ launch.rocket.rocket_type }}</span> rocket.</p>
+      </div>
+      <div class="extra">
+        <span class="bold">Launch Year:</span> {{ launch.launch_year }}
+      </div>
+    </div>
+  </div>
+</div>

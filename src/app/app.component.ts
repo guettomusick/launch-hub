@@ -9,7 +9,7 @@ import { LaunchService } from './launch.service';
 export class AppComponent {
   title = 'launch-hub';
 
-  constructor(private launch: LaunchService){
+  constructor(private launch: LaunchService) {
     this.launch.getLaunches().subscribe((data) => {
       console.log(data);
       console.log(data[0]);
