@@ -1,0 +1,16 @@
+<div class="ui text padded segment container">
+  <div class="ui centered raised fluid card" *ngIf="launch$ | async as launch">
+    <a class="image">
+      <lh-map [address]="launch.launch_site.site_name_long"></lh-map>
+    </a>
+    <div class="content">
+      <a class="header">{{ launch.mission_name }} Launch Site</a>
+      <div class="meta">
+        <p>{{ launch.launch_site.site_name_long }}</p>
+      </div>
+    </div>
+  </div>
+  <button class="ui fluid primary button" routerLink="/launch">
+    Done
+  </button>
+</div>

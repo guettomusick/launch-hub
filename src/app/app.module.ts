@@ -5,12 +5,16 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SuiModule } from 'ng2-semantic-ui';
-import { LaunchesListComponent } from './launches-list/launches-list.component';
+import { LaunchListComponent } from './launch-list/launch-list.component';
+import { LaunchSiteComponent } from './launch-site/launch-site.component';
+import { MapComponent } from './launch-site/map/map.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LaunchesListComponent
+    LaunchListComponent,
+    LaunchSiteComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,

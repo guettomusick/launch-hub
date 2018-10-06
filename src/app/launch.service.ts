@@ -15,6 +15,9 @@ export interface Launch {
   links: {
     mission_patch: string;
   };
+  launch_site: {
+    site_name_long: string;
+  };
 }
 
 @Injectable({
